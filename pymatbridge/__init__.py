@@ -77,7 +77,7 @@ class Matlab(object):
         if self.running:
             time.sleep(0.5)
         page_args = {
-            'func_path': func_path,
+            'func_path': os.path.abspath(func_path),
         }
         if func_args:
             page_args['arguments'] = json.dumps(func_args)
