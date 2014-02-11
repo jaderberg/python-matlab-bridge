@@ -48,7 +48,7 @@ NB: you can call MATLAB code before the server starts by adding code to the ./ma
 
 # Example
 
-An example MATLAB function and usage from Python is shown in test.py and test.m
+An example MATLAB function and usage from Python is shown in test.py and test.m and you can also see a [Notebook](http://nbviewer.ipython.org/github/plotly/IPython-plotly/blob/master/MATLAB%20Bridge.ipynb) using the Plotly MATLAB API. 
 
 # TODO
 
