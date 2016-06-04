@@ -137,6 +137,12 @@ while(true)
             fclose(fid);
             header=make_image_http_header(html,found);
             response=header2text(header);
+        case {'.css'}
+            fid = fopen(fullfilename, 'r');
+            html = fread(fid, inf, 'int8')';
+            fclose(fid);
+            header=make_css_http_header(html,found);
+            response=header2text(header);
         otherwise
             fid = fopen(fullfilename, 'r');
             html = fread(fid, inf, 'int8')';
